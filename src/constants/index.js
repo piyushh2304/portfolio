@@ -247,11 +247,10 @@ export const experiences = [
     job: "Param info society of I.T services",
     date: "JAN - MAY 2025",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Engineered and optimized web applications using the MERN stack.",
+      "Structured and managed databases with MongoDB and SQL, ensuring data integrity",
+      "Leveraged Git/GitHub for version control; collaborated in an Agile environment.",
+      "Orchestrated API integrations and deployed fully functional, responsive full-stack projects.",
     ],
   },
   // {
