@@ -5,6 +5,7 @@ A modern, animated 3D developer portfolio built with React, Three.js, TailwindCS
 ![3d Portfolio Screenshot GitHub](https://github.com/user-attachments/assets/056f9a37-af74-40bb-8e48-5bfb23d56dc6)
 
 ---
+LINK : https://portfolio-46tf.vercel.app/
 
 ## 📚 Table of Contents
 
