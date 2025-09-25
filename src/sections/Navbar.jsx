@@ -21,8 +21,8 @@ function Navigation({ closeMenu }) {
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "work", label: "Work" },
     { id: "project", label: "Project" }, // ✅ Added Project here
+    { id: "work", label: "Work" },
     { id: "contact", label: "Contact" },
   ];
 

@@ -147,80 +147,85 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   id: 5,
-  //   title: "WordPress Custom Theme",
-  //   description:
-  //     "A fully customizable WordPress theme optimized for performance and SEO.",
-  //   subDescription: [
-  //     "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-  //     "Integrated Tailwind CSS for modern styling and UI enhancements.",
-  //     "Optimized SEO and page speed using Vite.js for fast builds.",
-  //     "Implemented custom widgets and plugin compatibility for extended functionality.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/wordpress-theme.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "WordPress",
-  //       path: "/assets/logos/wordpress.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "HTML5",
-  //       path: "/assets/logos/html5.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "CSS3",
-  //       path: "/assets/logos/css3.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "Vite.js",
-  //       path: "/assets/logos/vitejs.svg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 6,
-  //   title: "Online Learning Platform",
-  //   description:
-  //     "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-  //   subDescription: [
-  //     "Built using Blazor WebAssembly for a seamless SPA experience.",
-  //     "Implemented video streaming with Azure Media Services.",
-  //     "Added a quiz system with dynamic question generation and real-time grading.",
-  //     "Integrated Stripe API for secure payment processing.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/elearning.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "Blazor",
-  //       path: "/assets/logos/blazor.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "Azure",
-  //       path: "/assets/logos/azure.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "Stripe",
-  //       path: "/assets/logos/stripe.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "TailwindCSS",
-  //       path: "/assets/logos/tailwindcss.svg",
-  //     },
-  //   ],
-  // },
+  {
+    id: 5,
+    title: "IIST-Connect",
+    description:
+      "A centralized platform for managing college events, club activities, and placements.",
+    subDescription: [
+      "📅 **Event Management**: Create, manage, and register for college events with ease.",
+      "👥 **Club Activities**: Facilitate communication and collaboration among student clubs.",
+      "💼 **Placement Support**: Provide resources and support for students seeking internships and job placements.",
+      "🔔 **Notifications**: Stay informed with reminders and alerts for upcoming events.",
+      "🔍 **Search & Filter**: Quickly find events or announcements by category, date, or club.",
+      "🧑‍🤝‍🧑 **User Roles**: Separate dashboards for **students**, **club coordinators**, and **admins**."
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/wordpress-theme.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/node.svg",
+      },
+      {
+        id: 3,
+        name: "Express.js",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongo.svg",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "BMW Car Sales Dashboard",
+    description:
+      "Welcome to the BMW Sales Dashboard — a powerful and interactive business intelligence tool built using Power BI. This project focuses on analyzing BMW sales data using advanced DAX measures and compelling visual storytelling to empower stakeholders with actionable insights.",
+    subDescription: [
+      "✅ Interactive Filters for Year, Month, and Day.",
+      "📅 Dynamic Calendar Table to leverage Power BI’s time intelligence capabilities.",
+      "📈 Visual Analysis of Revenue, Quantity Sold, and Average Price.",
+      "🔁 Bookmarks & Action Buttons for seamless page-to-page navigation.",
+      "⬆️⬇️ Growth Indicators with intuitive arrow visuals"
+    ],
+    href: "https://github.com/piyushh2304/bmw-car-sales-dashboard.git",
+    logo: "",
+    image: "/assets/main2.png",
+    tags: [
+      {
+        id: 1,
+        name: "Power BI",
+        path: "/assets/logos/powerbi.svg",
+      },
+      {
+        id: 2,
+        name: "Python",
+        path: "/assets/logos/python.svg",
+      },
+      {
+        id: 3,
+        name: "Dax",
+        path: "/assets/logos/stripe.svg",
+      },
+      {
+        id: 4,
+        name: "Analysis",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+
+  
 ];
 
 export const mySocials = [
@@ -273,6 +278,9 @@ export const experiences = [
     contents: [
       "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
       "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Completed a Data Analytics, gaining strong skills in data visualization, statistical analysis, and business intelligence tools.",
+      "Currently learning Machine Learning, focusing on supervised/unsupervised algorithms, model evaluation, and real-world applications.",
+      "Building and contributing to scalable projects with an emphasis on performance optimization, clean architecture, and cloud-based deployment."
     ],
   },
 ];

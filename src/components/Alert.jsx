@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion, AnimatePresence } from "motion/react";
 const Alert = ({ type, text }) => {
   const alertVarients = {
