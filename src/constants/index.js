@@ -45,7 +45,7 @@ export const myProjects = [
       "Implemented role-based access control (RBAC) for fine-grained user permissions.",
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
       "Connected to a secure SQLite database for user data storage.",
-      
+
     ],
     href: "https://fullstack-chat-app-5f9u.onrender.com/",
     logo: "",
@@ -162,7 +162,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/event.png",
     tags: [
       {
         id: 1,
@@ -225,7 +225,7 @@ export const myProjects = [
     ],
   },
 
-  
+
 ];
 
 export const mySocials = [
@@ -259,6 +259,19 @@ export const experiences = [
       "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
     ],
   },
+  {
+    title: "Graduate Trainee Engineer",
+    job: "Alphanext Technology Solutions",
+    date: "OCT - NOV 2025",
+    contents: [
+      "Integrated dynamic data fetching from multiple APIs and internal web sources to display real-time information on the company website.",
+      "Developed an automated Upwork proposal submission browser extension using Python, Selenium, n8n workflows, and REST integrations.",
+      "Designed and implemented a modern, responsive web interface using Next.js and ShadCN UI, improving overall usability and performance.",
+      "Collaborated with cross-functional teams to automate repetitive workflows, significantly reducing manual effort and turnaround time.",
+      "Ensured clean, maintainable code practices while working in an Agile development environment with Git-based version control."
+    ],
+  },
+
   // {
   //   title: "Back-End Developer",
   //   job: "Car Manufacture",
@@ -274,7 +287,7 @@ export const experiences = [
   {
     title: "Freelance Developer",
     job: "Self-Employed",
-    date: "2025-Present",
+    date: "NOV 2025 - PRESENT",
     contents: [
       "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
       "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
@@ -289,7 +302,7 @@ export const reviews = [
     name: "Jack",
     username: "@jack",
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack" ,
+    img: "https://robohash.org/jack",
   },
   {
     name: "Jill",

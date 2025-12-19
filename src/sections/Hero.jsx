@@ -6,7 +6,7 @@ import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
-import Loader from "../components/Loader";
+import CanvasLoader from "../components/CanvasLoader";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
@@ -18,8 +18,8 @@ const Hero = () => {
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
+        <Canvas className="w-full h-full" dpr={[1, 2]} camera={{ position: [0, 1, 3] }}>
+          <Suspense fallback={<CanvasLoader />}>
             <Float>
               <Astronaut
                 scale={isMobile && 0.23}

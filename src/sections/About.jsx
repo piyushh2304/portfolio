@@ -60,12 +60,12 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              style={{ rotate: "70deg", top: "10%", left: "38%" }}
               text="JavaScript"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
+              style={{ rotate: "-10deg", top: "10%", left: "38%" }}
               text="Java"
               containerRef={grid2Container}
             />
