@@ -160,7 +160,7 @@ export const myProjects = [
       "🔍 **Search & Filter**: Quickly find events or announcements by category, date, or club.",
       "🧑‍🤝‍🧑 **User Roles**: Separate dashboards for **students**, **club coordinators**, and **admins**."
     ],
-    href: "",
+    href: "https://iist-connect-mmbb.vercel.app/",
     logo: "",
     image: "/assets/projects/event.png",
     tags: [
