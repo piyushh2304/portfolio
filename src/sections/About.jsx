@@ -35,40 +35,31 @@ const About = () => {
               CODE IS CRAFT
             </p>
             <Card
-              style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              style={{ rotate: "-15deg", top: "20%", left: "10%" }}
               text="MERN"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
+              style={{ rotate: "15deg", top: "20%", left: "65%" }}
               text="AWS"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="C++"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "55%", left: "0%" }}
-              text="Data Analytics"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "38%" }}
-              text="Python"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "70deg", top: "10%", left: "38%" }}
+              style={{ rotate: "5deg", top: "-5%", left: "38%" }}
               text="JavaScript"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-10deg", top: "10%", left: "38%" }}
-              text="Java"
+              style={{ rotate: "10deg", top: "65%", left: "10%" }}
+              text="Data Analytics"
               containerRef={grid2Container}
             />
+            <Card
+              style={{ rotate: "-10deg", top: "65%", left: "65%" }}
+              text="Python"
+              containerRef={grid2Container}
+            />
+
           </div>
         </div>
         {/* Grid 3 */}
@@ -95,7 +86,7 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
+            <p className="headtext">Tech Stack</p>
             <p className="subtext">
               I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications

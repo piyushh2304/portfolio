@@ -39,7 +39,7 @@ const Projects = () => {
     <>
       <div className="w-full pt-4 md:pt-6">
 
-        <h2 className="text-white text-3xl font-bold  text-center">my selected projects</h2>
+        <h2 className="text-white text-3xl font-bold  text-center">My Selected Projects</h2>
       </div>
       <section
         id="project"
