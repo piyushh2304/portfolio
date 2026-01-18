@@ -38,12 +38,12 @@ const Projects = () => {
   return (
     <>
       <div className="w-full pt-4 md:pt-6">
-            
+
         <h2 className="text-white text-3xl font-bold  text-center">my selected projects</h2>
       </div>
       <section
         id="project"
-        className="flex flex-col items-center justify-start h-[60vh] md:h-[55vh] relative pt-2 md:pt-4"
+        className="flex flex-col items-center justify-start h-[35vh] md:h-[55vh] relative pt-2 md:pt-4"
       >
         <Particles
           className="absolute inset-0 -z-50"
@@ -52,132 +52,132 @@ const Projects = () => {
           color={"#ffffff"}
           refresh
         />
- 
-      {/* Carousel */}
-      {myProjects.map((project, index) => {
-        const position = getPosition(index);
-        if (position === "hidden") return null;
-        const isCenter = position === "center";
 
-        return (
-          <motion.img
-            key={project.id}
-            src={project.image}
-            alt={project.title}
-            className="rounded-[12px] select-none cursor-pointer"
-            initial="center"
-            animate={position}
-            variants={imageVariants}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            style={{
-              width: "40%",
-              position: "absolute",
-              willChange: "transform",
-              transform: "translateZ(0)",
-            }}
-            whileHover={isCenter ? { scale: 1.1, zIndex: 10 } : {}}
-            onClick={() => isCenter && setSelectedProject(project)}
-          />
-        );
-      })}
+        {/* Carousel */}
+        {myProjects.map((project, index) => {
+          const position = getPosition(index);
+          if (position === "hidden") return null;
+          const isCenter = position === "center";
 
-      {/* Selected Project Details */}
-      {selectedProject && (
-        <div
-          className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
-          onClick={() => setSelectedProject(null)}
-        >
+          return (
+            <motion.img
+              key={project.id}
+              src={project.image}
+              alt={project.title}
+              className="rounded-[12px] select-none cursor-pointer"
+              initial="center"
+              animate={position}
+              variants={imageVariants}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              style={{
+                width: "40%",
+                position: "absolute",
+                willChange: "transform",
+                transform: "translateZ(0)",
+              }}
+              whileHover={isCenter ? { scale: 1.1, zIndex: 10 } : {}}
+              onClick={() => isCenter && setSelectedProject(project)}
+            />
+          );
+        })}
+
+        {/* Selected Project Details */}
+        {selectedProject && (
           <div
-            className="relative bg-neutral-900 text-white rounded-xl shadow-2xl w-[70vw] h-[70vh] p-6 overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 bg-black/60 flex items-center justify-center z-50"
+            onClick={() => setSelectedProject(null)}
           >
-            {/* Close button */}
-            <button
-              aria-label="Close"
-              className="absolute top-3 right-3 p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
-              onClick={() => setSelectedProject(null)}
+            <div
+              className="relative bg-neutral-900 text-white rounded-xl shadow-2xl w-[70vw] h-[70vh] p-6 overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
             >
-              <img src="/assets/close.svg" alt="Close" className="w-4 h-4" />
-            </button>
+              {/* Close button */}
+              <button
+                aria-label="Close"
+                className="absolute top-3 right-3 p-2 rounded-full bg-white/10 hover:bg-white/20 transition"
+                onClick={() => setSelectedProject(null)}
+              >
+                <img src="/assets/close.svg" alt="Close" className="w-4 h-4" />
+              </button>
 
-            {/* Content */}
-            <div className="flex flex-col gap-4 h-full">
-              <h3 className="text-2xl font-bold">{selectedProject.title}</h3>
+              {/* Content */}
+              <div className="flex flex-col gap-4 h-full">
+                <h3 className="text-2xl font-bold">{selectedProject.title}</h3>
 
-              {/* Image and basic info */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-56 md:h-auto max-h-[60vh] object-contain rounded-lg bg-neutral-900/30 p-2"
-                />
+                {/* Image and basic info */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-56 md:h-auto max-h-[60vh] object-contain rounded-lg bg-neutral-900/30 p-2"
+                  />
 
-                <div className="flex flex-col gap-3">
-                  <p className="text-sm text-gray-200">
-                    {selectedProject.description}
-                  </p>
+                  <div className="flex flex-col gap-3">
+                    <p className="text-sm text-gray-200">
+                      {selectedProject.description}
+                    </p>
 
-                  {selectedProject.subDescription && (
-                    <div>
-                      <p className="font-semibold mb-2">Highlights</p>
-                      <ul className="list-disc pl-5 space-y-1">
-                        {Array.isArray(selectedProject.subDescription) ? (
-                          selectedProject.subDescription.map((item, idx) => (
-                            <li key={idx} className="text-sm text-gray-300">
-                              {item}
+                    {selectedProject.subDescription && (
+                      <div>
+                        <p className="font-semibold mb-2">Highlights</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                          {Array.isArray(selectedProject.subDescription) ? (
+                            selectedProject.subDescription.map((item, idx) => (
+                              <li key={idx} className="text-sm text-gray-300">
+                                {item}
+                              </li>
+                            ))
+                          ) : (
+                            <li className="text-sm text-gray-300">
+                              {selectedProject.subDescription}
                             </li>
-                          ))
-                        ) : (
-                          <li className="text-sm text-gray-300">
-                            {selectedProject.subDescription}
-                          </li>
-                        )}
-                      </ul>
-                    </div>
-                  )}
-
-                  {selectedProject.tags?.length > 0 && (
-                    <div className="mt-2">
-                      <p className="font-semibold mb-2">Tech</p>
-                      <div className="flex flex-wrap gap-2">
-                        {selectedProject.tags.map((t) => (
-                          <span
-                            key={t.id}
-                            className="px-2 py-1 rounded bg-white/10 text-xs"
-                          >
-                            {t.name}
-                          </span>
-                        ))}
+                          )}
+                        </ul>
                       </div>
-                    </div>
-                  )}
+                    )}
 
-                  {selectedProject.href && selectedProject.href.length > 0 && (
-                    <div className="mt-auto">
-                      <a
-                        href={selectedProject.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 transition text-sm"
-                      >
-                        Visit Project
-                        <img src="/assets/arrow-up.svg" alt="" className="w-4 h-4" />
-                      </a>
-                    </div>
-                  )}
+                    {selectedProject.tags?.length > 0 && (
+                      <div className="mt-2">
+                        <p className="font-semibold mb-2">Tech</p>
+                        <div className="flex flex-wrap gap-2">
+                          {selectedProject.tags.map((t) => (
+                            <span
+                              key={t.id}
+                              className="px-2 py-1 rounded bg-white/10 text-xs"
+                            >
+                              {t.name}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {selectedProject.href && selectedProject.href.length > 0 && (
+                      <div className="mt-auto">
+                        <a
+                          href={selectedProject.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 transition text-sm"
+                        >
+                          Visit Project
+                          <img src="/assets/arrow-up.svg" alt="" className="w-4 h-4" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
-    </section>
-    <div className="w-full mt-1">
-      <p className="text-center text-xs text-neutral-400">Click on a project to read more</p>
-    </div>
+        )}
+      </section>
       <div className="w-full mt-1">
-      <p className="text-center text-xs text-neutral-400">For More Projects visit <a href="https://github.com/piyushh2304" target="_blank" rel="noreferrer" className="text-indigo-400 hover:underline">my GitHub</a></p>
-    </div>
+        <p className="text-center text-xs text-neutral-400">Click on a project to read more</p>
+      </div>
+      <div className="w-full mt-1">
+        <p className="text-center text-xs text-neutral-400">For More Projects visit <a href="https://github.com/piyushh2304" target="_blank" rel="noreferrer" className="text-indigo-400 hover:underline">my GitHub</a></p>
+      </div>
     </>
   );
 };

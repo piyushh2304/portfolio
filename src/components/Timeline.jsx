@@ -21,16 +21,16 @@ export const Timeline = ({ data }) => {
   });
 
   // 🔥 If only 1 job → smaller height
-const adjustedHeight = data.length === 1 ? height * 0.8 : height;
+  const adjustedHeight = data.length === 1 ? height * 0.8 : height;
 
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, adjustedHeight]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div id="work" className="c-space section-spacing" ref={containerRef}>
+    <div id="work" className="c-space mt-20 md:mt-30" ref={containerRef}>
       <h2 className="text-heading">My Work Experience</h2>
-     <div ref={ref} className="relative pb-10 md:pb-20">
+      <div ref={ref} className="relative pb-10 md:pb-20">
 
         {data.map((item, index) => (
           <div
