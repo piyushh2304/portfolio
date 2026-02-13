@@ -1,11 +1,9 @@
 import { useRef } from "react";
-import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
-  const grid2Container = useRef();
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
@@ -26,40 +24,21 @@ const About = () => {
           <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
         {/* Grid 2 */}
-        <div className="grid-default-color grid-2">
-          <div
-            ref={grid2Container}
-            className="flex items-center justify-center w-full h-full"
-          >
-            <p className="flex items-end text-5xl text-gray-500">
+        <div className="grid-default-color grid-2 relative overflow-hidden">
+          <div className="flex flex-col items-center justify-center h-full w-full p-6">
+            <p className="absolute inset-0 flex items-center justify-center text-4xl md:text-5xl text-gray-500 font-bold opacity-10 select-none pointer-events-none z-0">
               CODE IS CRAFT
             </p>
-            <Card
-              style={{ rotate: "-15deg", top: "20%", left: "10%" }}
-              text="MERN"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "15deg", top: "20%", left: "65%" }}
-              text="AWS"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "5deg", top: "-5%", left: "38%" }}
-              text="JavaScript"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "10deg", top: "65%", left: "10%" }}
-              text="Data Analytics"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-10deg", top: "65%", left: "65%" }}
-              text="Python"
-              containerRef={grid2Container}
-            />
-
+            <div className="grid grid-cols-3 gap-3 w-[85%] z-10 transition-all duration-500">
+              {["javascript", "MERN", "Python", "RAG", "Devops", "postgresql", "MONGODB", "system Design", "Git", "Redis", "GraphQL", "docker"].map((lang) => (
+                <div
+                  key={lang}
+                  className="bg-white/5 border border-white/10 rounded-lg py-3 px-1 text-center text-[10px] md:text-xs font-bold uppercase tracking-widest text-neutral-300 hover:bg-indigo-500/20 hover:border-indigo-500/40 hover:text-white hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+                >
+                  {lang}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         {/* Grid 3 */}

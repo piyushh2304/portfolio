@@ -23,37 +23,34 @@ export const myProjects = [
         name: ".tailwindcss",
         path: "/assets/logos/tailwindcss.svg",
       },
-      // {
-      //   id: 3,
-      //   name: "Ef Core",
-      //   path: "/assets/logos/stripe.png",
-      // },
-      // {
-      //   id: 4,
-      //   name: "TailwindCSS",
-      //   path: "/assets/logos/tailwindcss.svg",
-      // },
+      {
+        id: 3,
+        name: "Langchain",
+        path: "/assets/logos/langchain.svg",
+      },
+
     ],
   },
   {
     id: 2,
-    title: "Chatty : FullStack chat Application",
+    title: "CodeFoundry AI",
     description:
-      "Developed a real-time chat application using the MERN stack (MongoDB, Express.js, React.js, Node.js)with Socket.io for instant bidirectional communication.",
+      "An advanced Agentic RAG platform that transforms static code snippets into a dynamic, searchable, and self-correcting developer knowledge base.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
-
+      "🧠 **Hybrid Semantic Retrieval**: Dual-vector strategy with snippet-level and step-level embeddings combined with keyword precision search.",
+      "📊 **Intelligent Reranking & Confidence Scoring**: Context-density scoring with real-time confidence indicators and zero-hallucination source citations.",
+      "🔁 **Agentic Reflection Loop**: Self-auditing AI responses that validate outputs against retrieved snippets before delivery.",
+      "📦 **Repository Ingestion**: Clone, chunk, and index entire GitHub repositories using `gemini-embedding-001` for private searchable libraries.",
+      "📝 **Notion-Style Editor**: Premium writing experience with intelligent code block detection and auto language recognition.",
+      "💬 **Conversational Memory**: Sliding-window chat history for deep multi-turn technical discussions."
     ],
-    href: "https://fullstack-chat-app-5f9u.onrender.com/",
+    href: "https://codefoundry-ten.vercel.app/",
     logo: "",
-    image: "/assets/projects/chatty.png",
+    image: "/assets/projects/codefoundry.png",
     tags: [
       {
         id: 1,
-        name: "React",
+        name: "React 19",
         path: "/assets/logos/react.svg",
       },
       {
@@ -63,14 +60,27 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "Express.js",
-        path: "/assets/logos/express.svg",
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
       },
       {
         id: 4,
-        name: "MongoDB",
-        path: "/assets/logos/mongo.svg",
+        name: "Prisma ORM",
+        path: "/assets/logos/prisma.svg",
       },
+      {
+        id: 5,
+        name: "Gemini 2.0",
+        path: "/assets/logos/google.svg",
+      }, {
+        id: 6,
+        name: "Langchain",
+        path: "/assets/logos/langchain.svg",
+      }, {
+        id: 7,
+        name: "Pinecone",
+        path: "/assets/logos/pinecone.svg",
+      }
     ],
   },
   {
@@ -112,22 +122,24 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "Web-d Signature App",
+    title: "NotionGPT",
     description:
-      "Developed a digital signature application using the MERN stack (MongoDB, Express.js, React.js, Node.js), enabling users to securely create, save, and share electronic signatures.",
+      "An AI-first collaborative workspace that transforms traditional document editing into a proactive intelligence engine powered by autonomous research agents and semantic knowledge graphs.",
     subDescription: [
-      "Implemented user authentication and authorization with JWT.",
-      "Integrated a rich text editor for customizable signature creation.",
-      "Developed a document management system for easy access and sharing.",
-      "Ensured compliance with legal standards for electronic signatures.",
+      "🤖 **Proactive AI Integration**: Masterpiece Mode with intelligent intent detection that auto-generates structured, research-backed documents.",
+      "🌐 **Autonomous Research Agents**: Live web browsing via Tavily with fact verification and citation-aware content synthesis.",
+      "🧠 **Semantic Radar**: Real-time contextual analysis suggesting related notes and dynamic cross-linking across your knowledge graph.",
+      "🔎 **Vector-Powered Knowledge Search**: Context-aware retrieval using Pinecone and Google Gemini embeddings.",
+      "🤝 **Real-Time Multiplayer Collaboration**: Multi-user editing powered by Yjs and Hocuspocus for zero-latency synchronization.",
+      "🕸️ **Graph Intelligence**: Visual knowledge network with gap detection and cross-document reasoning."
     ],
-    href: "https://webd-signature-app.vercel.app/",
+    href: "https://notiongpt-xi.vercel.app/",
     logo: "",
-    image: "/assets/projects/webd.png",
+    image: "/assets/projects/notiongpt.png",
     tags: [
       {
         id: 1,
-        name: "React",
+        name: "React 19",
         path: "/assets/logos/react.svg",
       },
       {
@@ -137,16 +149,22 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "Express.js",
-        path: "/assets/logos/express.svg",
-      },
-      {
-        id: 4,
         name: "MongoDB",
         path: "/assets/logos/mongo.svg",
       },
+      {
+        id: 4,
+        name: "Pinecone",
+        path: "/assets/logos/pinecone.svg",
+      },
+      {
+        id: 5,
+        name: "Google Gemini",
+        path: "/assets/logos/google.svg",
+      }
     ],
   },
+
   {
     id: 5,
     title: "IIST-Connect",
@@ -224,6 +242,83 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 7,
+    title: "Chatty : FullStack chat Application",
+    description:
+      "Developed a real-time chat application using the MERN stack (MongoDB, Express.js, React.js, Node.js)with Socket.io for instant bidirectional communication.",
+    subDescription: [
+      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
+      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
+      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
+      "Connected to a secure SQLite database for user data storage.",
+    ],
+    href: "https://fullstack-chat-app-5f9u.onrender.com/",
+    logo: "",
+    image: "/assets/projects/chatty.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/node.svg",
+      },
+      {
+        id: 3,
+        name: "Express.js",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongo.svg",
+      },
+    ],
+  },
+
+  {
+    id: 8,
+    title: "Web-d Signature App",
+    description:
+      "Developed a digital signature application using the MERN stack (MongoDB, Express.js, React.js, Node.js), enabling users to securely create, save, and share electronic signatures.",
+    subDescription: [
+      "Implemented user authentication and authorization with JWT.",
+      "Integrated a rich text editor for customizable signature creation.",
+      "Developed a document management system for easy access and sharing.",
+      "Ensured compliance with legal standards for electronic signatures.",
+    ],
+    href: "https://webd-signature-app.vercel.app/",
+    logo: "",
+    image: "/assets/projects/webd.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/node.svg",
+      },
+      {
+        id: 3,
+        name: "Express.js",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongo.svg",
+      },
+    ],
+  },
+
+
 
 
 ];
