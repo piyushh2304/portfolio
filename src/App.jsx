@@ -5,6 +5,7 @@ import Hero from "./sections/Hero";
 import Loader from "./components/Loader";
 
 const About = lazy(() => import("./sections/About"));
+const Skills = lazy(() => import("./sections/Skills"));
 const Projects = lazy(() => import("./sections/Projects"));
 const Experiences = lazy(() => import("./sections/Experiences"));
 const Contact = lazy(() => import("./sections/Contact"));
@@ -17,6 +18,7 @@ const App = () => {
       <Hero />
       <Suspense fallback={<Loader />}>
         <About />
+        <Skills />
         <Projects />
         <Experiences />
         <Contact />
